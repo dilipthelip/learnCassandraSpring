@@ -16,7 +16,7 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ActiveProfiles("local")
-public class LearnCassandraApplicationTests {
+public class LearnCassandraDaoTest {
 
 	/*@Autowired
 	CassandraTemplate cassandraTemplate;*/
@@ -25,7 +25,7 @@ public class LearnCassandraApplicationTests {
 	LearnCassandraDAO learnCassandraDAO;
 
 	@Test
-	public void contextLoads() throws SQLException {
+	public void getCourseName() throws SQLException {
 
 		String courseName = learnCassandraDAO.getCourseName();
 
