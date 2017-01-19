@@ -1,0 +1,42 @@
+spring:
+    profiles:
+      active: local
+---
+
+spring:
+    profiles: local
+server:
+      port: 8080
+cassandra:
+      keyspace: learncassandra
+      contactpoints:  127.0.0.1
+      port: 9042
+---
+spring:
+    profiles: dev
+server:
+      port: 8080
+cassandra:
+      keyspace: learncassandra
+      contactpoints:  127.0.0.1
+      port: 9042
+---
+
+spring:
+    profiles: stage
+server:
+      port: 8080
+cassandra:
+      keyspace: learncassandra
+      contactpoints:  127.0.0.1
+      port: 9042
+---
+
+spring:
+    profiles: production
+server:
+      port: 8080
+cassandra:
+      keyspace: learncassandra
+      contactpoints:  127.0.0.1
+      port: 9042
