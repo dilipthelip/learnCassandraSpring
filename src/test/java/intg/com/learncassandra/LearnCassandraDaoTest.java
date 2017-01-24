@@ -104,6 +104,7 @@ public class LearnCassandraDaoTest {
 
 			result = learnCassandraDAO.updateCourseAuthor(updateCourseVO);
 			System.out.println("The boolean return value of updateCourseAuthor is :  " + result);
+			assertTrue(result);
 
 
 		} catch (SQLException e) {
@@ -131,6 +132,7 @@ public class LearnCassandraDaoTest {
 
 			result =  learnCassandraDAO.deleteCourse(deleteCourseVO);
 			System.out.println("The boolean value of deleteCourseAuthor is :  " + result);
+			assertTrue(result);
 
 
 		} catch (SQLException e) {
