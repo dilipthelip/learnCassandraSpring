@@ -1,5 +1,7 @@
 # learnCassandraSpring
 
+This application reads, writes, updates and deletes the data in to the cassandra database.  
+
 ## How to run the code in local ?
 
 ### Step 1: 
